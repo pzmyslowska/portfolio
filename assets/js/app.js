@@ -13,5 +13,20 @@ window.addEventListener('scroll', () => {
 
 //AOS
 AOS.init({
-    duration: 700
+    duration: 500
 });
+
+function calculate() {
+    let sum = 0;
+    var firstValue = document.getElementById("firstNumber").value;
+    var secondValue = document.getElementById("secondNumber").value;
+    var thirdValue = document.getElementById("thirdNumber").value;
+    var fourthValue = document.getElementById("fourthNumber").value;
+    sum = firstValue*100 + secondValue*80 + thirdValue*85 + fourthValue*75;
+    document.getElementById("result").value = sum;   
+}
+
+function openPopup() {
+    let popup = document.getElementById("popup")
+}
+
