@@ -1,5 +1,6 @@
 const navbar = document.querySelector('.navbar')
 
+//Navbar animation
 window.addEventListener('scroll', () => {
     if(this.scrollY > 0) {
         navbar.classList.remove('py-4')
@@ -11,11 +12,12 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//AOS
+//Animate on scroll
 AOS.init({
     duration: 500
 });
 
+//Calculator
 function calculate() {
     let sum = 0;
     var firstValue = document.getElementById("firstNumber").value;
@@ -26,7 +28,10 @@ function calculate() {
     document.getElementById("result").value = sum;   
 }
 
-function openPopup() {
-    let popup = document.getElementById("popup")
-}
-
+//Pop-up
+function show_modal(){
+    document.querySelector('.modal').style.display="flex";
+  }
+  function close_modal(){
+    document.querySelector('.modal').style.display='none';
+  }
